@@ -33,7 +33,7 @@ def caesar_decipher(text, shift):
 def main():
     f = Figlet(font='slant', width=100)
     print(Fore.GREEN + f.renderText('Magic Cryptology') + Fore.RESET)
-    print(Fore.RED + "     | - |  By : f3nr1r - Cyber Security | - |         " + Fore.RESET)
+    print(Fore.RED + "                      | - |  By : f3nr1r - Cyber Security | - |         " + Fore.RESET)
 
     while True:
         
