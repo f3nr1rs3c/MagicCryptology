@@ -14,20 +14,20 @@ def clear_screen():
 
 def print_banner():
     f = Figlet(font='slant', width=100)
-    print(Fore.LIGHTMAGENTA_EX + f.renderText('Magic Passswords') + Fore.RESET)
-    print(Fore.RED + "             | - | Made By : f3nr1r - Cyber Security | - |         " + Fore.RESET)
+    print(Fore.LIGHTMAGENTA_EX + f.renderText('Magic Passwords') + Fore.RESET)
+    print(Fore.RED + "             | - | Made By : F3NR1R - Cyber Security | - |         " + Fore.RESET)
 
 def print_menu():
     print("""
 
-1) Lowercase Characters
-2) Uppercase Characters
-3) Number Characters
-4) Special Characters
-5) Random Characters
-6) Exit
+{0}1){2} Lowercase Characters
+{0}2){2} Uppercase Characters
+{0}3){2} Number Characters
+{0}4){2} Special Characters
+{0}5){2} Random Characters
+{0}6){2} Exit
 
-""")
+""".format(Fore.RED, "0", Fore.RESET, "1", "2", "3", "4", "5", "6", "7", "8", "9", Fore.RESET))
 
 def generate_password(length, characters):
     password = ''.join(random.choice(characters) for i in range(length))
@@ -38,7 +38,7 @@ def main():
         clear_screen()
         print_banner()
         print_menu()
-        choice = input("Enter Transaction Number: ")
+        choice = input(Fore.GREEN + "Enter Transaction Number: " + Fore.RESET)
 
         if choice == '1':
             characters = string.ascii_lowercase
@@ -59,7 +59,7 @@ def main():
 
         while True:
             try:
-                length = int(input("Enter password length: "))
+                length = int(input(Fore.BLUE + "Enter password length: " + Fore.RESET))
                 if length <= 0:
                     raise ValueError("Enter a positive integer.")
                 break
