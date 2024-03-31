@@ -92,20 +92,20 @@ def main():
         
         print("""
 
-1) MD5
-2) SHA1
-3) SHA256
-4) SHA384
-5) SHA512
-6) Binary Code
-7) Morse Alphabet
-8) Caesar Cipher
-9) Base16
-10) Base32
-11) Base64
-x) Exit
+{0}1){2} MD5
+{0}2){2} SHA1
+{0}3){2} SHA256
+{0}4){2} SHA384
+{0}5){2} SHA512
+{0}6){2} Binary Code
+{0}7){2} Morse Alphabet
+{0}8){2} Caesar Cipher
+{0}9){2} Base16
+{0}10){2} Base32
+{0}11){2} Base64
+{0}X){2} Exit
 
-        """)
+        """.format(Fore.RED, "0", Fore.RESET, "1", "2", "3", "4", "5", "6", "7", "8", "9", Fore.RESET))
         
         process = input("Enter your process number: ")
         
@@ -181,7 +181,7 @@ x) Exit
             print(Fore.GREEN + "Base64 Output: " + Fore.RESET, base64)
                             
         # Exit Program
-        elif process == 'x':
+        elif process == 'X':
             print("Exiting The Program...")
             break
         
