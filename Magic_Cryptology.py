@@ -86,7 +86,7 @@ def base64(text):
 def main():
     f = Figlet(font='slant', width=100)
     print(Fore.GREEN + f.renderText('Magic Cryptology') + Fore.RESET)
-    print(Fore.RED + "                      | - |  By : F3NR1R - Cyber Security | - |         " + Fore.RESET)
+    print(Fore.RED + "                      | - |  By : Fenrir - Cyber Security Specialist | - |         " + Fore.RESET)
 
     while True:
         
