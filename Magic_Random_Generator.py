@@ -15,7 +15,7 @@ def clear_screen():
 def print_banner():
     f = Figlet(font='slant', width=100)
     print(Fore.LIGHTMAGENTA_EX + f.renderText('Magic Passwords') + Fore.RESET)
-    print(Fore.RED + "             | - | Made By : Fenrir - Cyber Security Specialist | - |         " + Fore.RESET)
+    print(Fore.RED + "             | - | Made By : Fenrir - Penetration Tester | - |         " + Fore.RESET)
 
 def print_menu():
     print("""
